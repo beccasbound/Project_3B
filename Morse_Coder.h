@@ -15,7 +15,8 @@ class Morse_Coder {
 
 public:
     Morse_Coder();
-
+    string Morse_Coder::char_to_str(char the_char);
+    Binary_Tree<string> build_morse_tree();
 
 private:
     map<char, string> code_key;
@@ -23,7 +24,7 @@ private:
     string ciphertext;
     Binary_Tree<string> letter_tree;
 
-    Binary_Tree<string> build_morse_tree();
+   
     
 
 
