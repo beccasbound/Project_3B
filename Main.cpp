@@ -15,8 +15,8 @@ int main() {
     string plaintext_in, plaintext_out, ciphertext_in, ciphertext_out;
 
     Morse_Coder session = Morse_Coder();
-    ciphertext_out = session.encode(plaintext_in);
-    plaintext_out = session.decode(ciphertext_in);
+   // ciphertext_out = session.encode(plaintext_in);
+  //  plaintext_out = session.decode(ciphertext_in);
 
     
     system("pause");
