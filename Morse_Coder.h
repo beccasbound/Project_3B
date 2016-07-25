@@ -5,6 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include <map>
+#include <string>
 
 
 
@@ -20,9 +21,9 @@ private:
     map<char, string> code_key;
     string plaintext;
     string ciphertext;
-    Binary_Tree<char> letters;
+    Binary_Tree<string> letter_tree;
 
-    Binary_Tree<char> build_morse_tree();
+    Binary_Tree<string> build_morse_tree();
     
 
 
