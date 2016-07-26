@@ -132,6 +132,12 @@ Binary_Tree<string> Morse_Coder::build_morse_tree() {
 		//loop through text in order to fing coresponding letter to code
 		for (int i = 0; i <= text.length(); i++)
 		{
+			// error checking if inccorect code been entered
+			if (text[i] != '.' || text[i] != '-' || text[i] != ' ' || text[i] != '\0')
+			{
+				return  "Inccorect code been entered. Morse code should consis of dots: \".\" and dashes: \" - \" only.";
+				
+			}
 			// if code equals . go left
 			if (text[i] == '.')
 			{
