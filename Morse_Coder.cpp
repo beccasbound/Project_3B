@@ -136,12 +136,12 @@ Binary_Tree<string> Morse_Coder::build_morse_tree() {
 		//loop through text in order to fing coresponding letter to code
 		for (int i = 0; i <= text.length(); i++)
 		{
-			if (text[i] == '.' && current->left == NULL || text[i] == '-' && current->right == NULL)
+			if (text[i] == '.' && i!=text.length() && current->left==NULL || text[i] == '-' && i!=text.length() && current->right==NULL)
 			{
 				return "ERROR: Incorrect code been entered";
 			}
 			// error checking if inccorect code been entered
-			if (text[i] != '.' || text[i] != '-' || text[i] != ' ' || text[i] != '\0')
+			if (text[i] != '.' && text[i] != '-' && text[i] != ' ' && text[i] != '\0')
 			{
 				return  "ERROR: Incorrect code been entered.";
 				

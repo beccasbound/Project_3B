@@ -13,8 +13,8 @@ using namespace std;
 
 int main() {
     string plaintext_in, plaintext_out, ciphertext_in, ciphertext_out;
-    plaintext_in = "CS303";
-    ciphertext_in = "........_";
+    plaintext_in = "CS";
+    ciphertext_in = ". . . ";
     Morse_Coder session = Morse_Coder();
 	ciphertext_out = session.encode_to_code(plaintext_in);
 	plaintext_out = session.decode_to_text(ciphertext_in);
