@@ -24,9 +24,6 @@
     <ClInclude Include="BTNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="String_Tokenizer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Morse_Coder.cpp">

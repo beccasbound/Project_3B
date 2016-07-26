@@ -55,8 +55,6 @@ Binary_Tree<string> Morse_Coder::build_morse_tree() {
 
     } while (!fin.eof()); // there are still lines in the file (Could hard-code this to exactly 26 iterations)
 
-    cout << result.in_order() << endl;
-
     return result;
 }
 

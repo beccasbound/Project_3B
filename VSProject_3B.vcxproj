@@ -149,7 +149,6 @@
     <ClInclude Include="Binary_Tree.h" />
     <ClInclude Include="BTNode.h" />
     <ClInclude Include="Morse_Coder.h" />
-    <ClInclude Include="String_Tokenizer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
