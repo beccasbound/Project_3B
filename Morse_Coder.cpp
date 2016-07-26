@@ -135,7 +135,7 @@ Binary_Tree<string> Morse_Coder::build_morse_tree() {
 			// error checking if inccorect code been entered
 			if (text[i] != '.' || text[i] != '-' || text[i] != ' ' || text[i] != '\0')
 			{
-				return  "Inccorect code been entered. Morse code should consis of dots: \".\" and dashes: \" - \" only.";
+				return  "Incorrect code entered. Morse code should consis of dots: \".\" and dashes: \" - \" only.";
 				
 			}
 			// if code equals . go left
