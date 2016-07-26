@@ -74,6 +74,10 @@ Binary_Tree<string> Morse_Coder::build_morse_tree() {
 		// convert text to lower letters
 		for (int j = 0; text[j] != '\0'; j++)
 		{
+			if (!isalpha(text[j]))
+			{
+				return"ERROR: Only latin alphabet can be entered";
+			}
 			text[j] = tolower(text[j]);
 		}
 		//decalaring a map
@@ -132,10 +136,14 @@ Binary_Tree<string> Morse_Coder::build_morse_tree() {
 		//loop through text in order to fing coresponding letter to code
 		for (int i = 0; i <= text.length(); i++)
 		{
+			if (text[i] == '.' && current->left == NULL || text[i] == '-' && current->right == NULL)
+			{
+				return "ERROR: Incorrect code been entered";
+			}
 			// error checking if inccorect code been entered
 			if (text[i] != '.' || text[i] != '-' || text[i] != ' ' || text[i] != '\0')
 			{
-				return  "Incorrect code entered. Morse code should consis of dots: \".\" and dashes: \" - \" only.";
+				return  "ERROR: Incorrect code been entered.";
 				
 			}
 			// if code equals . go left

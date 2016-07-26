@@ -8,8 +8,8 @@
 'VSProject_3B.exe' (Win32): Loaded 'C:\Windows\System32\kernel.appcore.dll'. Cannot find or open the PDB file.
 'VSProject_3B.exe' (Win32): Loaded 'C:\Windows\System32\msvcrt.dll'. Cannot find or open the PDB file.
 'VSProject_3B.exe' (Win32): Loaded 'C:\Windows\System32\rpcrt4.dll'. Cannot find or open the PDB file.
-The thread 0xb8c has exited with code 0 (0x0).
-The thread 0x2ccc has exited with code 0 (0x0).
-The thread 0x2c58 has exited with code 0 (0x0).
-The thread 0xc8c has exited with code 0 (0x0).
-The program '[5116] VSProject_3B.exe' has exited with code 0 (0x0).
+The thread 0x1ff8 has exited with code 0 (0x0).
+The thread 0x2ac4 has exited with code 0 (0x0).
+The thread 0x1eb8 has exited with code 0 (0x0).
+The thread 0xaa8 has exited with code 0 (0x0).
+The program '[9464] VSProject_3B.exe' has exited with code 0 (0x0).

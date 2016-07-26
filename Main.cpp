@@ -16,8 +16,8 @@ int main() {
     plaintext_in = "CS303";
     ciphertext_in = "........_";
     Morse_Coder session = Morse_Coder();
-    ciphertext_out = session.encode_to_code(plaintext_in);
-    plaintext_out = session.decode_to_text(ciphertext_in);
+	ciphertext_out = session.encode_to_code(plaintext_in);
+	plaintext_out = session.decode_to_text(ciphertext_in);
 
     cout << endl;
     cout << "Morse code for " << '"' << plaintext_in << '"' << " is:  " << ciphertext_out << endl << endl;
