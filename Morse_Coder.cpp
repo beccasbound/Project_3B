@@ -70,3 +70,102 @@ Binary_Tree<string> Morse_Coder::build_morse_tree() {
         return s;
     }
 
+	//conver text into the morse code by using map
+	string Morse_Coder::encode_to_code(string text)
+	{
+		// convert text to lower letters
+		for (int j = 0; text[j] != '\0'; j++)
+		{
+			text[j] = tolower(text[j]);
+		}
+		//decalaring a map
+		map<const char, string> encode;
+		//initializing map
+		encode['a'] = ".-";
+		encode['b'] = "-...";
+		encode['c'] = "-.-.";
+		encode['d'] = "-..";
+		encode['e'] = ".";
+		encode['f'] = "..-.";
+		encode['g'] = "--.";
+		encode['h'] = "....";
+		encode['i'] = "..";
+		encode['j'] = ".---";
+		encode['k'] = "-.-";
+		encode['l'] = ".-..";
+		encode['m'] = "--";
+		encode['n'] = "-.";
+		encode['o'] = "---";
+		encode['p'] = ".--.";
+		encode['q'] = "--.-";
+		encode['r'] = ".-.";
+		encode['s'] = "...";
+		encode['t'] = "-";
+		encode['u'] = "..-";
+		encode['v'] = "...-";
+		encode['w'] = ".--";
+		encode['x'] = "-..-";
+		encode['y'] = "-.--";
+		encode['z'] = "--..";
+
+		// iterator to iterate through map in order to find the right code for letter
+		map<char, string>::iterator iter;
+		string result;
+		for (int i = 0; text[i]; i++)
+		{
+			result += encode.find(text[i])->second + " ";
+		}
+		return result;
+	}
+	
+	// convert Morse code into text
+	string Morse_Coder::decode_to_text(string text)
+	{
+		// create a binary tree
+		Binary_Tree<string> Btree = build_morse_tree();
+		string the_result;
+		// initialize current node with a root of binary tree
+		BTNode<string>* current = Btree.getRoot();
+		// if current node is null return an empty sting
+		if (current == NULL)
+		{
+			return "";
+		}
+		//loop through text in order to fing coresponding letter to code
+		for (int i = 0; i <= text.length(); i++)
+		{
+			// if code equals . go left
+			if (text[i] == '.')
+			{
+				if (current->left != NULL)
+				{
+					current = current->left;
+				}
+
+			}
+			// if code equals - go right
+			if (text[i] == '-')
+			{
+				if (current->right != NULL)
+				{
+					current = current->right;
+				}
+     		}
+			// if space or end of text is reached get the data
+			if (text[i] == ' ' || text[i]=='\0')
+			{
+				the_result += current->data;
+				if (text[i] == '\n')
+				{
+					return the_result;
+				}
+				else if(text[i]==' ')
+				{
+					// make a current node point to the root
+					current = Btree.getRoot();
+				}
+			}
+		}
+		return the_result;
+	}
+

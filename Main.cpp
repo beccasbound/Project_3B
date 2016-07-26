@@ -13,11 +13,14 @@ using namespace std;
 
 int main() {
     string plaintext_in, plaintext_out, ciphertext_in, ciphertext_out;
-
+	plaintext_in = "RebeccaGulnoza";
+	ciphertext_in = "-.. --.";
     Morse_Coder session = Morse_Coder();
-   // ciphertext_out = session.encode(plaintext_in);
-  //  plaintext_out = session.decode(ciphertext_in);
+   ciphertext_out = session.encode_to_code(plaintext_in);
+   plaintext_out = session.decode_to_text(ciphertext_in);
 
+   cout << ciphertext_out << endl;
+   cout << plaintext_out << endl;
     
     system("pause");
     return 0;

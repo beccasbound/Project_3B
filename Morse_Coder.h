@@ -18,6 +18,9 @@ public:
     string Morse_Coder::char_to_str(char the_char);
     Binary_Tree<string> build_morse_tree();
 
+	string encode_to_code(string text);
+	string decode_to_text(string text);
+
 private:
     map<char, string> code_key;
     string plaintext;

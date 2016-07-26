@@ -1,0 +1,15 @@
+﻿'VSProject_3B.exe' (Win32): Loaded 'C:\Users\Gulnoza\Documents\UMKC2016\CS303\Project_3B\Project_3B\x64\Debug\VSProject_3B.exe'. Symbols loaded.
+'VSProject_3B.exe' (Win32): Loaded 'C:\Windows\System32\ntdll.dll'. Cannot find or open the PDB file.
+'VSProject_3B.exe' (Win32): Loaded 'C:\Windows\System32\kernel32.dll'. Cannot find or open the PDB file.
+'VSProject_3B.exe' (Win32): Loaded 'C:\Windows\System32\KernelBase.dll'. Cannot find or open the PDB file.
+'VSProject_3B.exe' (Win32): Loaded 'C:\Windows\System32\msvcp140d.dll'. Cannot find or open the PDB file.
+'VSProject_3B.exe' (Win32): Loaded 'C:\Windows\System32\vcruntime140d.dll'. Cannot find or open the PDB file.
+'VSProject_3B.exe' (Win32): Loaded 'C:\Windows\System32\ucrtbased.dll'. Cannot find or open the PDB file.
+'VSProject_3B.exe' (Win32): Loaded 'C:\Windows\System32\kernel.appcore.dll'. Cannot find or open the PDB file.
+'VSProject_3B.exe' (Win32): Loaded 'C:\Windows\System32\msvcrt.dll'. Cannot find or open the PDB file.
+'VSProject_3B.exe' (Win32): Loaded 'C:\Windows\System32\rpcrt4.dll'. Cannot find or open the PDB file.
+The thread 0xb8c has exited with code 0 (0x0).
+The thread 0x2ccc has exited with code 0 (0x0).
+The thread 0x2c58 has exited with code 0 (0x0).
+The thread 0xc8c has exited with code 0 (0x0).
+The program '[5116] VSProject_3B.exe' has exited with code 0 (0x0).
